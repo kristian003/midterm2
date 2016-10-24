@@ -11,17 +11,17 @@ var colAngry = {
 };
 
 
-// var rSlider;
+var rSlider;
 
 function setup() {
   createCanvas(600, 400);
-  rSlider = createSlider(0, 255, 100);
+  rSlider = createSlider(0, 255, 255);
   rSlider.position(20, 20);
   gSlider = createSlider(0, 255, 0);
   gSlider.position(20, 50);
-  bSlider = createSlider(0, 255, 255);
+  bSlider = createSlider(0, 0, 255);
   bSlider.position(20, 80);
-  bSlider2 = createSlider(0, 255, 255);
+  bSlider2 = createSlider(0, 0, 255);
   bSlider2.position(20, 110);
 }
 
