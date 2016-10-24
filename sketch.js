@@ -3,9 +3,9 @@ var spot = {
   y: 200
 };
 
-var colAngry = {
-  r: 0,
-  g:255,
+var colEmotions = {
+  angry: red,
+  sad: blue,
   b:100
 };
 
@@ -14,23 +14,15 @@ var colAngry = {
 
 function setup() {
   createCanvas(600, 400);
-  Slider1 = createSlider(colAngry);
+  Slider1 = createSlider("angry");
   Slider1.position(20, 20);
-  // gSlider = createSlider(0, 255, 0);
-  // gSlider.position(20, 50);
-  // bSlider = createSlider(0, 255, 255);
-  // bSlider.position(20, 80);
-  // bSlider2 = createSlider(0, 255, 255);
-  // bSlider2.position(20, 110);
+ 
 }
 
 function draw() {
-  var colAngry = Slider1.value();
-  // var g = gSlider.value();
-  // var b = bSlider.value();
-  // var b = bSlider2.value();
-  fill("colAngry");
-  // noStroke();
+  // var angry = Slider1.red();
+  // fill(angry);
+  // // noStroke();
   ellipse(spot.x, spot.y, 30, 30);
   
   
