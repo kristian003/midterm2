@@ -1,30 +1,39 @@
 var spot = {
-  x: 100,
-  y: 50
+  x: 300,
+  y: 200
 };
 
-var col = {
-  r: 255,
-  g: 0,
-  b: 0
+var colAngry = {
+  r: 0,
+  g:255,
+  b:100
 };
+
 
 // var rSlider;
 
 function setup() {
   createCanvas(600, 400);
-  background(255);
-  rSlider = createSlider(0, 255, 100);
-  rSlider.position(20, 20);
+  Slider1 = createSlider(colAngry);
+  Slider1.position(20, 20);
+  // gSlider = createSlider(0, 255, 0);
+  // gSlider.position(20, 50);
+  // bSlider = createSlider(0, 255, 255);
+  // bSlider.position(20, 80);
+  // bSlider2 = createSlider(0, 255, 255);
+  // bSlider2.position(20, 110);
 }
 
 function draw() {
-  col.r = (0, 255);
-  spot.x = random(0, width);
-  spot.y = random(0, height);
-  fill(col.r, col.g, col.b, 100);
-  noStroke();
-  ellipse(spot.x, spot.y, 12, 12);
+  var colAngry = Slider1.value();
+  // var g = gSlider.value();
+  // var b = bSlider.value();
+  // var b = bSlider2.value();
+  fill("colAngry");
+  // noStroke();
+  ellipse(spot.x, spot.y, 30, 30);
+  
+  
   
 }
 
